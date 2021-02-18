@@ -48,5 +48,6 @@ print randint(0, 100)
 
 # we can ask users for input
 result = input("give a number ")
+type(result)
 # int converts from string to number
 print "this was your number: {}".format(int(result))
