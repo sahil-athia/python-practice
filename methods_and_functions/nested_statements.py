@@ -8,8 +8,14 @@ def printer(x):
   x = 200
   print "reassigned x to {}".format(x)
 
-printer(x)
+def change_global():
+  # if we wanted to change the golbal variable:
+  global x
+  print "X is {}".format(x)
 
+  # REASSIGNMENT ON A GLOBAL LEVEL
+  x = "new value"
+  print "reassigned x to {}".format(x)
 
 # num in the following is a local variable
 lambda num : num * 2
@@ -28,4 +34,7 @@ def greet():
     print "hello " + name
   hello()
 
+printer(x)
 greet()
+change_global()
+print "x is: " + x
