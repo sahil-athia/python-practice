@@ -1,2 +1,2 @@
-# help function gives us uderful information, press q to quit
+# help function gives us useful information, press q to quit
 help(my_list.insert)
