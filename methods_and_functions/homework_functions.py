@@ -19,3 +19,10 @@ def upper_lower(text):
   return "{} upper case letter and {} lower case letter".format(number_upper, number_lower)
 s = 'Hello Mr. Rogers, how are you this fine Tuesday?'
 print upper_lower(s)
+
+
+## return uniqe list with no repetitives
+def make_unique(data):
+  return list(set(data))
+
+print make_unique([1,1,1,1,2,2,3,3,3,3,4,5])
