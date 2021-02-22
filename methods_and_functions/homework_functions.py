@@ -26,3 +26,10 @@ def make_unique(data):
   return list(set(data))
 
 print make_unique([1,1,1,1,2,2,3,3,3,3,4,5])
+
+
+## multiply all number in a list
+def multiply(nums):
+  return map(lambda num: num * 2, nums)
+
+print multiply([1, 2, 3, 4, 5, 6, 7])
