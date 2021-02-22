@@ -33,3 +33,10 @@ def multiply(nums):
   return map(lambda num: num * 2, nums)
 
 print multiply([1, 2, 3, 4, 5, 6, 7])
+
+## check is given word is a planidrome
+def palindrome(text):
+  return text == text[::-1]
+
+print palindrome('helleh')
+print palindrome('hellcvtequvybijeh')
