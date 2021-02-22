@@ -1,4 +1,5 @@
 import math
+import string
 
 ## calculate sphere volume 
 
@@ -40,3 +41,22 @@ def palindrome(text):
 
 print palindrome('helleh')
 print palindrome('hellcvtequvybijeh')
+
+## determine text is a pangram
+
+def is_pangram(str1, alphabet = string.ascii_lowercase):
+  ## remove spaces in text
+  new_str = str1.replace(" ", "")
+
+  ## create a list of unique lower case letter
+  uniqe_str = list(set(new_str.lower()))
+
+  ## make the list alphabetical
+  uniqe_str.sort()
+
+  ## make the list a string
+  final_str = "".join(uniqe_str)
+  
+  return final_str in alphabet
+
+print is_pangram("The quick brown fox jumps over the lazy dog")
