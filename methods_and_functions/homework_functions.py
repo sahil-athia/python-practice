@@ -52,18 +52,18 @@ print palindrome('hellcvtequvybijeh')
 
 ## determine text is a pangram
 def is_pangram(str1, alphabet = string.ascii_lowercase):
-  ## remove spaces in text
-  new_str = str1.replace(" ", "")
+  ## create alphabet set
+  alphaset = set(alphabet)
 
-  ## create a list of unique lower case letter
-  uniqe_str = list(set(new_str.lower()))
+  ## remove spaces in string
+  str1 = str1.replace(" ", "")
 
-  ## make the list alphabetical
-  uniqe_str.sort()
+  ## make the string lower case
+  str1 = str1.lower()
 
-  ## make the list a string
-  final_str = "".join(uniqe_str)
+  ## make the string a set
+  str1 = set(str1)
 
-  return final_str in alphabet
+  return alphaset == str1
 
 print is_pangram("The quick brown fox jumps over the lazy dog")
