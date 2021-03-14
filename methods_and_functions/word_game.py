@@ -23,6 +23,14 @@ def third_user_choice():
   
   return int(choice3)
 
+def last_user_choice():
+  choice4 = "WRONG"
+
+  while choice4.isdigit() == False:
+    choice4 = "{}".format(input("on the road, you can either 1: wave down a car or 2: run for the nearest shop: "))
+  
+  return int(choice4)
+
 answer1 = first_user_choice()
 
 if answer1 == 1:
@@ -38,5 +46,12 @@ answer3 = third_user_choice()
 
 if answer3 == 2:
   print("a killer managed to get you during the call, you died")
+
+answer4 = last_user_choice()
+
+if answer4 == 1:
+  print("a killer caught up to you as you waited for a car, you died")
+
+print("you made it to safety in a store, you win")
 
 
