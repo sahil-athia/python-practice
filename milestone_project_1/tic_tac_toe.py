@@ -10,6 +10,14 @@ display(row1, row2, row3)
 row2[1] = "X"
 display(row1, row2, row3)
 
-position_index = input("Please Enter A Value: ")
-row1[position_index] = "X"
+def user_choice():
+  choice = "WRONG"
+
+  while choice.isdigit() == False:
+    choice = "{}".format(input("Please Enter A Value: "))
+
+  return int(choice)
+
+user_choice()
+# row1[user_choice()] = "X"
 display(row1, row2, row3)

@@ -6,5 +6,5 @@ def yoda(text):
   reversed_words = " ".join(reverse_list)
   return reversed_words
 
-print yoda('I am home')
-print yoda('We are ready')
+print(yoda('I am home'))
+print(yoda('We are ready'))
