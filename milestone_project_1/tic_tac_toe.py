@@ -14,7 +14,10 @@ def user_choice():
   choice = "WRONG"
 
   while choice.isdigit() == False:
-    choice = "{}".format(input("Please Enter A Value: "))
+    choice = "{}".format(input("Please Enter A Value (0-10): "))
+
+    if choice.isdigit() == False:
+      print("sorry that is not a digit")
 
   return int(choice)
 
