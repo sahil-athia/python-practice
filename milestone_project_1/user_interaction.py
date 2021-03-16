@@ -1,10 +1,10 @@
 game_list = [0, 1, 2]
+game_on = True
 
 def display_game(game_list):
   print("here is the current list")
   print(game_list)
 
-display_game(game_list)
 
 def position_choice():
   choice = "WRONG"
@@ -17,8 +17,6 @@ def position_choice():
     
   return int(choice)
 
-position_choice()
-
 def replacement_choice(game_list, position):
   user_placement = input("type a string to place at position {}: ".format(position))
 
@@ -26,8 +24,6 @@ def replacement_choice(game_list, position):
 
   return game_list
 
-
-print(replacement_choice(game_list, 1))
 
 def game_on_choice():
   choice = "WRONG"
@@ -43,6 +39,15 @@ def game_on_choice():
   else:
     return False
 
+while game_on:
+  display_game(game_list)
 
-game_on_choice()
+  position = position_choice()
+
+  game_list = replacement_choice(game_list, position)
+
+  display_game(game_list)
+
+  game_on = game_on_choice()
+
 
