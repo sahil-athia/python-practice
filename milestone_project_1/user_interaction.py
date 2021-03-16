@@ -7,6 +7,9 @@ def display_game(game_list):
 
 
 def position_choice():
+  '''
+  let the user choose the position on the game list to be changed 
+  '''
   choice = "WRONG"
 
   while choice not in ["0", "1", "2"]:
@@ -17,7 +20,11 @@ def position_choice():
     
   return int(choice)
 
+
 def replacement_choice(game_list, position):
+  '''
+  user can decide what to change the position chosen earlier with
+  '''
   user_placement = input("type a string to place at position {}: ".format(position))
 
   game_list[position] = user_placement
@@ -26,6 +33,9 @@ def replacement_choice(game_list, position):
 
 
 def game_on_choice():
+  '''
+  allows user to leave or keep playing
+  '''
   choice = "WRONG"
 
   while choice not in ["Y", "N"]:
@@ -49,5 +59,3 @@ while game_on:
   display_game(game_list)
 
   game_on = game_on_choice()
-
-
