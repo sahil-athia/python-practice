@@ -18,3 +18,14 @@ def position_choice():
   return int(choice)
 
 position_choice()
+
+def replacement_choice(game_list, position):
+  user_placement = input("type a string to place at position {}: ".format(position))
+
+  game_list[position] = user_placement
+
+  return game_list
+
+
+print(replacement_choice(game_list, 1))
+
