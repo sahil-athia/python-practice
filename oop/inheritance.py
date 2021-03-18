@@ -24,3 +24,15 @@ class Dog(Animal):
   def __init__(self):
     # create instance of animal class when we create an instance of the dog class
     Animal.__init__(self)
+    print("dog created")
+  
+  def who_am_i(self):
+    # we an overrite methods
+    print("I am a dog")
+  
+  def bark(self):
+    print("woof")
+
+my_dog = Dog()
+my_dog.who_am_i()
+my_dog.eat()
