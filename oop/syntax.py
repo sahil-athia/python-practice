@@ -1,5 +1,5 @@
 class NameOfClass():
-  def _init_(self, param1, param2):
+  def __init__(self, param1, param2):
     self.param1 = param1
     self.param2 = param2
 

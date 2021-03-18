@@ -1,5 +1,8 @@
-class SampleWord():
-  pass
+class Dog():
+  
+  def __init__(self, breed):
+    self.breed = breed
 
-my_sample = SampleWord()
-print(type(my_sample))
+
+my_dog = Dog(breed = "lab")
+print(my_dog.breed)
