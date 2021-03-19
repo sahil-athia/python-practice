@@ -10,6 +10,12 @@ class Book():
   
   def __str__(self):
     return f"{self.title} by {self.author}"
+  
+  def __len__(self):
+    return self.pages
 
 b = Book("title", "person", 90)
 print(b)
+print(len(b))
+
+# we can delete b using del b, and print a report when it happens
