@@ -13,9 +13,14 @@ class Book():
   
   def __len__(self):
     return self.pages
+  
+  def __del__(self):
+    print("A book object has been deleted")
 
 b = Book("title", "person", 90)
 print(b)
 print(len(b))
 
 # we can delete b using del b, and print a report when it happens
+
+del b
